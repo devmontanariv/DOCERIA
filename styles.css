@@ -869,3 +869,36 @@ section .catalog-title-strong {
 .visit-section h2 em {
   color: var(--rose) !important;
 }
+
+/* Keep the story section compact while preserving the portrait focus. */
+.story-section {
+  grid-template-columns: .8fr 1.2fr;
+  min-height: 0;
+}
+.story-photo {
+  min-height: 300px;
+}
+.story-copy {
+  max-width: none;
+  padding: 42px 7vw;
+}
+.story-copy h2 {
+  font-size: clamp(38px, 4vw, 58px);
+}
+.story-copy p:not(.eyebrow) {
+  font-size: 15px;
+}
+.story-signature {
+  margin-top: 24px;
+}
+@media (max-width: 850px) {
+  .story-photo {
+    min-height: 320px;
+  }
+  .story-copy {
+    padding: 44px 7vw;
+  }
+  .story-copy h2 {
+    font-size: clamp(38px, 10vw, 52px);
+  }
+}
