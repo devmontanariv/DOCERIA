@@ -902,3 +902,585 @@ section .catalog-title-strong {
     font-size: clamp(38px, 10vw, 52px);
   }
 }
+
+/* Editorial layout inspired by the Figma reference. */
+:root {
+  --editorial-pink: #d97d99;
+  --editorial-pink-light: #f8e7ec;
+  --editorial-gray: #e2e2e2;
+  --editorial-dark: #34262d;
+}
+body {
+  background: #fff;
+  color: var(--editorial-dark);
+}
+.site-header {
+  background: #fff !important;
+  color: var(--editorial-dark) !important;
+  border-bottom: 1px solid rgba(52,38,45,.16);
+  box-shadow: none;
+}
+.site-header a,
+.site-header .brand-script,
+.site-header .brand-sub {
+  color: var(--editorial-dark) !important;
+}
+.site-header a:hover {
+  color: var(--editorial-pink) !important;
+}
+.nav-cta {
+  background: var(--editorial-pink) !important;
+  color: #fff !important;
+  border-radius: 2px;
+  padding: 11px 17px;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: 11px;
+}
+.hero {
+  min-height: 560px;
+  background: var(--editorial-pink-light);
+}
+.hero-copy {
+  background: var(--editorial-pink-light) !important;
+  color: var(--editorial-dark) !important;
+  padding: 7vw 8vw;
+}
+.hero-copy h1 {
+  color: var(--editorial-pink) !important;
+  max-width: 520px;
+  margin-bottom: 18px;
+  font-size: clamp(48px, 6vw, 78px);
+  text-transform: uppercase;
+}
+.hero-copy h1 em {
+  color: var(--editorial-pink) !important;
+}
+.hero-copy .hero-text,
+.hero-copy .hero-note {
+  color: var(--editorial-dark) !important;
+}
+.hero-copy .hero-text {
+  max-width: 390px;
+  font-size: 14px;
+}
+.hero-actions {
+  gap: 14px;
+}
+.hero-actions .button,
+.hero-actions .text-link {
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 10px;
+}
+.hero-actions .button {
+  min-height: 0;
+  padding: 11px 16px;
+  background: var(--editorial-pink) !important;
+  color: #fff !important;
+}
+.hero-actions .text-link {
+  color: var(--editorial-pink) !important;
+  border-color: var(--editorial-pink) !important;
+}
+.hero-note {
+  margin-top: 34px;
+}
+.hero-note::after {
+  display: none;
+}
+.seal {
+  width: 30px;
+  height: 30px;
+  border-color: var(--editorial-pink);
+  color: var(--editorial-pink);
+  font-size: 11px;
+}
+.hero-art {
+  min-height: 560px;
+  background: var(--editorial-gray);
+}
+.intro-band {
+  background: var(--editorial-pink) !important;
+  border: 0;
+}
+.intro-band > p {
+  padding: 9px 5vw;
+  color: #fff;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.marquee {
+  display: none;
+}
+.full-catalog {
+  background: var(--editorial-pink) !important;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  scroll-margin-top: 76px;
+}
+.full-catalog .flavors-heading {
+  margin-bottom: 28px;
+}
+.full-catalog .flavors-heading .catalog-subtitle,
+.full-catalog .flavors-heading .catalog-title,
+.full-catalog .flavors-heading > p {
+  color: #fff !important;
+}
+.full-catalog .catalog-title {
+  margin-bottom: 8px;
+  font-size: clamp(42px, 5vw, 66px);
+}
+.menu-category-nav {
+  justify-content: center;
+  gap: 24px;
+  margin: 20px auto 28px;
+  border-color: rgba(255,255,255,.55);
+}
+.menu-category-nav button,
+.menu-category-nav button:hover,
+.menu-category-nav button.active {
+  color: #fff !important;
+}
+.menu-category-nav button.active {
+  border-bottom-color: #fff;
+}
+.full-catalog .detail-card,
+.full-catalog .macaron-catalog {
+  background: #fff !important;
+  border-color: transparent;
+  box-shadow: none;
+}
+.full-catalog .detail-card h3,
+.full-catalog .detail-card h4,
+.full-catalog .detail-card p,
+.full-catalog .detail-card li,
+.full-catalog .detail-card strong,
+.full-catalog .macaron-catalog h3,
+.full-catalog .macaron-catalog h4,
+.full-catalog .macaron-catalog p,
+.full-catalog .macaron-catalog li,
+.full-catalog .macaron-catalog strong,
+.full-catalog .macaron-catalog .price-lines p {
+  color: var(--editorial-dark) !important;
+}
+.full-catalog .detail-card .product-kicker,
+.full-catalog .macaron-catalog .product-kicker {
+  color: var(--editorial-pink) !important;
+}
+.cake-section,
+.cake-details,
+.special-desserts,
+.party-kits {
+  background: #fff !important;
+}
+.cake-section {
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.cake-catalog-heading {
+  grid-column: 1 / -1;
+  padding: 0 7vw;
+}
+.cake-catalog-heading .catalog-subtitle,
+.cake-catalog-heading h2,
+.cake-catalog-heading h2 em,
+.cake-catalog-heading > p:last-child {
+  color: var(--editorial-pink) !important;
+}
+.cake-visual {
+  border-radius: 14px;
+  background: var(--editorial-gray);
+}
+.cake-copy {
+  background: #fff;
+  padding: 6vw;
+}
+.cake-copy > p,
+.cake-description {
+  color: var(--editorial-dark) !important;
+}
+.cake-copy .button-outline {
+  background: var(--editorial-pink) !important;
+  border-color: var(--editorial-pink) !important;
+  color: #fff !important;
+  border-radius: 2px;
+}
+.cake-details {
+  padding-top: 48px !important;
+}
+.cake-details .section-heading h2,
+.cake-details .section-heading h2 em,
+.cake-details .section-heading > p:last-child {
+  color: var(--editorial-pink) !important;
+}
+.cake-details .option-panel,
+.cake-details .size-card {
+  background: var(--editorial-pink-light) !important;
+  border-color: transparent;
+}
+.special-desserts {
+  background: var(--editorial-pink) !important;
+}
+.special-desserts .section-heading h2,
+.special-desserts .section-heading h2 em,
+.special-desserts .section-heading > p:last-child {
+  color: #fff !important;
+}
+.special-desserts .section-heading .eyebrow {
+  color: #fff !important;
+}
+.special-desserts .section-heading {
+  display: block;
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.special-desserts .section-heading > div {
+  width: 100%;
+}
+.special-desserts .section-heading > p:last-child {
+  max-width: 520px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.special-desserts .dessert-table,
+.special-desserts .dessert-list > div {
+  background: #fff !important;
+}
+.brunch-section {
+  background: var(--editorial-pink) !important;
+}
+.brunch-copy {
+  padding-right: 4vw;
+}
+.brunch-section h2,
+.brunch-section h2 em,
+.brunch-copy > p:not(.eyebrow),
+.brunch-copy .clean-list,
+.brunch-price {
+  color: #fff !important;
+}
+.brunch-photo {
+  min-height: 420px;
+  background-color: #fff;
+}
+.event-section {
+  background: var(--editorial-gray) !important;
+}
+.event-section .section-heading h2,
+.event-section .section-heading h2 em,
+.event-section .section-heading > p:last-child {
+  color: var(--editorial-pink) !important;
+}
+.menu-card {
+  background: #fff !important;
+  border: 0;
+  color: var(--editorial-dark);
+}
+.menu-card h3,
+.menu-card ul,
+.menu-card li,
+.menu-card .menu-price,
+.menu-card .menu-price small {
+  color: var(--editorial-dark) !important;
+}
+.menu-card .menu-tag {
+  color: var(--editorial-pink) !important;
+}
+.menu-card.featured-menu {
+  background: var(--editorial-pink) !important;
+  box-shadow: none;
+}
+.menu-card.featured-menu h3,
+.menu-card.featured-menu ul,
+.menu-card.featured-menu li,
+.menu-card.featured-menu .menu-price,
+.menu-card.featured-menu .menu-price small,
+.menu-card.featured-menu .menu-number {
+  color: #fff !important;
+}
+.menu-card.featured-menu .menu-tag {
+  color: #fff !important;
+}
+.story-section {
+  background: var(--editorial-pink-light) !important;
+}
+.story-copy {
+  padding: 42px 7vw;
+}
+.story-copy h2,
+.story-copy h2 em {
+  color: var(--editorial-pink) !important;
+}
+.story-copy h2 em {
+  color: var(--editorial-dark) !important;
+}
+.story-copy p:not(.eyebrow) {
+  color: var(--editorial-pink) !important;
+}
+.story-copy p:not(.eyebrow) {
+  color: var(--editorial-dark) !important;
+}
+.visit-section {
+  background: var(--editorial-pink) !important;
+}
+.visit-section,
+.visit-section h2,
+.visit-section p:not(.eyebrow),
+.visit-section .visit-card p {
+  color: #fff !important;
+}
+.visit-section .visit-card {
+  background: rgba(255,255,255,.16) !important;
+}
+.site-footer {
+  background: #fff !important;
+  border-top: 1px solid rgba(52,38,45,.12);
+}
+.site-footer .brand-script,
+.site-footer .brand-sub,
+.site-footer > p,
+.site-footer .footer-links a,
+.site-footer .site-credit {
+  color: var(--editorial-dark) !important;
+}
+@media (max-width: 850px) {
+  .hero {
+    min-height: 0;
+  }
+  .hero-copy {
+    padding: 58px 7vw 44px;
+  }
+  .hero-art {
+    min-height: 400px;
+  }
+  .cake-section {
+    grid-template-columns: 1fr;
+  }
+  .cake-catalog-heading {
+    padding: 0 7vw;
+  }
+  .cake-copy {
+    padding: 48px 7vw;
+  }
+  .brunch-photo {
+    min-height: 300px;
+  }
+  .menu-category-nav {
+    justify-content: flex-start;
+  }
+}
+
+/* Mobile layout safeguards for the editorial composition. */
+@media (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+  .site-header {
+    position: sticky;
+    min-height: 64px;
+    padding: 12px 5vw;
+  }
+  .main-nav {
+    display: none;
+  }
+  .nav-cta {
+    max-width: 142px;
+    padding: 10px 11px;
+    font-size: 9px;
+    text-align: center;
+    white-space: normal;
+  }
+  .hero-copy {
+    padding: 48px 7vw 36px;
+  }
+  .hero-copy h1 {
+    max-width: 100%;
+    font-size: clamp(40px, 12vw, 56px);
+    letter-spacing: -1.5px;
+  }
+  .hero-copy .hero-text {
+    font-size: 15px;
+  }
+  .hero-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero-actions .button,
+  .hero-actions .text-link {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-note {
+    margin-top: 28px;
+  }
+  .hero-art {
+    min-height: 300px;
+  }
+  .hero-image {
+    transform: none;
+  }
+  .full-catalog {
+    padding: 42px 5vw;
+  }
+  .full-catalog .catalog-title {
+    font-size: clamp(38px, 12vw, 54px);
+  }
+  .full-catalog .flavors-heading > p {
+    font-size: 14px;
+  }
+  .menu-category-nav {
+    width: calc(100% + 10vw);
+    margin-left: -5vw;
+    padding: 0 5vw 8px;
+    gap: 20px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+  .menu-category-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .full-catalog   .full-catalog .catalog-detail-grid,
+  .option-grid,
+  .size-grid,
+  .kit-grid,
+  .reservation-grid,
+  .special-desserts .dessert-list {
+    grid-template-columns: 1fr;
+  }
+  .detail-card,
+  .option-panel,
+  .size-card,
+  .kit-card {
+    padding: 22px;
+  }
+  .macaron-catalog {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .cake-catalog-heading {
+    padding: 0;
+  }
+  .cake-catalog-heading h2,
+  .cake-details .section-heading h2,
+  .special-desserts .section-heading h2 {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+  .cake-visual {
+    min-height: 300px;
+  }
+  .cake-copy {
+    padding: 38px 7vw;
+  }
+  .price-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .dessert-table {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 16px;
+    overflow: visible;
+  }
+  .dessert-row {
+    min-width: 0;
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 18px 0;
+  }
+  .dessert-head {
+    display: none;
+  }
+  .dessert-row strong {
+    margin-bottom: 4px;
+  }
+  .dessert-row span {
+    display: block;
+    padding: 7px 10px;
+    background: var(--editorial-pink-light);
+    color: var(--editorial-dark);
+  }
+  .dessert-table > p {
+    min-width: 0;
+    margin: 0;
+    padding: 0 0 16px;
+  }
+  .special-desserts .dessert-list {
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .special-desserts .dessert-list > div {
+    min-width: 0;
+    padding: 22px;
+  }
+  .brunch-section {
+    gap: 24px;
+  }
+  .brunch-copy {
+    padding-right: 0;
+  }
+  .brunch-photo {
+    min-height: 260px;
+  }
+  .menu-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 28px;
+  }
+  .menu-card {
+    min-height: auto;
+    padding: 30px 22px 24px;
+  }
+  .menu-card ul {
+    min-height: auto;
+    margin: 22px 0;
+  }
+  .event-footer {
+    align-items: stretch;
+  }
+  .event-footer .button {
+    width: 100%;
+  }
+  .story-photo {
+    min-height: 300px;
+  }
+  .story-section {
+    grid-template-columns: 1fr;
+  }
+  .story-photo,
+  .story-copy {
+    width: 100%;
+  }
+  .story-copy {
+    padding: 38px 7vw;
+  }
+  .story-copy h2 {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+  .visit-section {
+    padding: 44px 7vw !important;
+  }
+  .visit-card {
+    width: 100%;
+    padding: 22px;
+  }
+  .site-footer {
+    padding: 32px 7vw;
+  }
+  .site-footer,
+  .footer-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .site-footer > * {
+    margin-bottom: 14px;
+  }
+}
